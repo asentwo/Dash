@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>iOS Design</title>
+    <link href='style.css' rel='stylesheet'>
+    <style type='text/css'>
+      
+        
+        td.td_notes code {
+          border: none;
+          box-shadow: none;
+          background: none;
+          font-family: "Open Sans", sans-serif;
+          font-size: medium;
+          color: #666666;
+        }
+      
+        td, th {
+          white-space:nowrap;
+          min-width:110px;
+        }
+      
+        .no-min-width td, .no-min-width th {
+          min-width:0;
+        }
+      
+        td:last-child {
+          width:99%;
+        }
+    </style>
+    <link href='//dash_ref/Category/Resolutions/1'>
+    <link href='//dash_ref_Resolutions/Entry/iPhone 6 Plus (Physical)/0'>
+    <link href='//dash_ref_Resolutions/Entry/iPhone 6 Plus (Virtual)/0'>
+    <link href='//dash_ref_Resolutions/Entry/iPhone 6/0'>
+    <link href='//dash_ref_Resolutions/Entry/iPhone 5%2F5S%2F5C/0'>
+    <link href='//dash_ref_Resolutions/Entry/iPhone 4%2F4S/0'>
+    <link href='//dash_ref_Resolutions/Entry/iPhone &amp; iPod Touch/0'>
+    <link href='//dash_ref_Resolutions/Entry/iPad Retina/0'>
+    <link href='//dash_ref_Resolutions/Entry/iPad Mini/0'>
+    <link href='//dash_ref_Resolutions/Entry/iPad Mini Retina/0'>
+    <link href='//dash_ref_Resolutions/Entry/iPad/0'>
+    <link href='//dash_ref/Category/Displays/1'>
+    <link href='//dash_ref_Displays/Entry/iPhone 6 Plus/0'>
+    <link href='//dash_ref_Displays/Entry/iPhone 6/0'>
+    <link href='//dash_ref_Displays/Entry/iPhone 5%2F5S%2F5C/0'>
+    <link href='//dash_ref_Displays/Entry/iPhone 4%2F4S/0'>
+    <link href='//dash_ref_Displays/Entry/iPhone &amp; iPod Touch/0'>
+    <link href='//dash_ref_Displays/Entry/iPad Retina/0'>
+    <link href='//dash_ref_Displays/Entry/iPad Mini/0'>
+    <link href='//dash_ref_Displays/Entry/iPad Mini Retina/0'>
+    <link href='//dash_ref_Displays/Entry/iPad/0'>
+    <link href='//dash_ref/Category/Dimensions/1'>
+    <link href='//dash_ref_Dimensions/Entry/iPhone 6 Plus/0'>
+    <link href='//dash_ref_Dimensions/Entry/iPhone 6/0'>
+    <link href='//dash_ref_Dimensions/Entry/iPhone 5%2F5S%2F5C/0'>
+    <link href='//dash_ref_Dimensions/Entry/iPhone 4%2F4S/0'>
+    <link href='//dash_ref_Dimensions/Entry/iPad Retina/0'>
+    <link href='//dash_ref_Dimensions/Entry/iPad Mini/0'>
+    <link href='//dash_ref_Dimensions/Entry/iPad/0'>
+    <link href='//dash_ref/Category/Common Design Elements/1'>
+    <link href='//dash_ref_Common Design Elements/Entry/iPhone 6 Plus/0'>
+    <link href='//dash_ref_Common Design Elements/Entry/iPhone 6/0'>
+    <link href='//dash_ref_Common Design Elements/Entry/iPhone 5%2F5S%2F5C/0'>
+    <link href='//dash_ref_Common Design Elements/Entry/iPhone 4%2F4S/0'>
+    <link href='//dash_ref_Common Design Elements/Entry/iPad Retina/0'>
+    <link href='//dash_ref_Common Design Elements/Entry/iPad Mini/0'>
+    <link href='//dash_ref_Common Design Elements/Entry/iPad/0'>
+    <link href='//dash_ref/Category/Icons/1'>
+    <link href='//dash_ref_Icons/Entry/iPhone 6 Plus/0'>
+    <link href='//dash_ref_Icons/Entry/iPhone 6/0'>
+    <link href='//dash_ref_Icons/Entry/iPhone 5%2F5S%2F5C/0'>
+    <link href='//dash_ref_Icons/Entry/iPhone 4%2F4S/0'>
+    <link href='//dash_ref_Icons/Entry/iPad Retina/0'>
+    <link href='//dash_ref_Icons/Entry/iPad Mini/0'>
+    <link href='//dash_ref_Icons/Entry/iPad/0'>
+    <link href='//dash_ref/Category/Default Font Sizes iPhone 5%2F5C%2F5S%2F6/1'>
+    <link href='//dash_ref_Default Font Sizes iPhone 5%2F5C%2F5S%2F6/Entry/Navigation bar title/0'>
+    <link href='//dash_ref_Default Font Sizes iPhone 5%2F5C%2F5S%2F6/Entry/Regular buttons/0'>
+    <link href='//dash_ref_Default Font Sizes iPhone 5%2F5C%2F5S%2F6/Entry/Table header/0'>
+    <link href='//dash_ref_Default Font Sizes iPhone 5%2F5C%2F5S%2F6/Entry/Table label/0'>
+    <link href='//dash_ref_Default Font Sizes iPhone 5%2F5C%2F5S%2F6/Entry/Tab bar icon labels/0'>
+    <link href='//dash_ref/Category/Default Font Sizes iPhone 6 Plus/1'>
+    <link href='//dash_ref_Default Font Sizes iPhone 6 Plus/Entry/Navigation bar title/0'>
+    <link href='//dash_ref_Default Font Sizes iPhone 6 Plus/Entry/Regular buttons/0'>
+    <link href='//dash_ref_Default Font Sizes iPhone 6 Plus/Entry/Table header/0'>
+    <link href='//dash_ref_Default Font Sizes iPhone 6 Plus/Entry/Table label/0'>
+    <link href='//dash_ref_Default Font Sizes iPhone 6 Plus/Entry/Tab bar icon labels/0'>
+    <link href='//dash_ref/Category/Size Classes For Adaptive Layout/1'>
+    <link href='//dash_ref_Size Classes For Adaptive Layout/Entry/iPad - Portrait/0'>
+    <link href='//dash_ref_Size Classes For Adaptive Layout/Entry/iPad - Landscape/0'>
+    <link href='//dash_ref_Size Classes For Adaptive Layout/Entry/iPhone 6 Plus - Portrait/0'>
+    <link href='//dash_ref_Size Classes For Adaptive Layout/Entry/iPhone 6 Plus - Landscape/0'>
+    <link href='//dash_ref_Size Classes For Adaptive Layout/Entry/iPhone 6 and Before - Portrait/0'>
+    <link href='//dash_ref_Size Classes For Adaptive Layout/Entry/iPhone 6 and Before - Landscape/0'>
+  </head>
+  <body>
+    <header>
+      <h1>iOS Design</h1>
+    </header>
+    <article>
+      <p></p>
+      <section class='category'>
+        <h2 id='//dash_ref/Category/Resolutions/1'>
+          Resolutions
+        </h2>
+        <div class='scrollable'>
+          <table>
+            <tr>
+              <th>Device</th>
+              <th>Portrait Pixels</th>
+              <th>Landscape Pixels</th>
+              <th>Portrait Logical Resolution</th>
+              <th>Landscape Logical Resolution</th>
+            </tr>
+            <tr id='//dash_ref_Resolutions/Entry/iPhone 6 Plus (Physical)/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6 Plus (Physical)</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1080 x 1920 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1920 x 1080 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>414 x 736 points</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>736 x 414 points</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Resolutions/Entry/iPhone 6 Plus (Virtual)/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6 Plus (Virtual)</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1242 x 2208 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>2208 x 1242 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>414 x 736 points</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>736 x 414 points</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Resolutions/Entry/iPhone 6/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>750 x 1334 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1334 x 750 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>375 x 667 points</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>667 x 375 points</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Resolutions/Entry/iPhone 5%2F5S%2F5C/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 5/5S/5C</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>640 x 1136 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1136 x 640 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>320 x 568 points</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>568 x 320 points</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Resolutions/Entry/iPhone 4%2F4S/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 4/4S</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>640 x 960 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>960 x 640 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>320 x 480 points</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>480 x 320 points</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Resolutions/Entry/iPhone &amp; iPod Touch/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone &amp; iPod Touch</p></div>
+                <div class='notes'><p>1st, 2nd and 3rd Generation</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>320 x 480 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>480 x 320 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>320 x 480 points</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>480 x 320 points</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Resolutions/Entry/iPad Retina/0'>
+              <td class='description'>
+                <div class='name'><p>iPad Retina</p></div>
+                <div class='notes'><p>iPad 3, iPad 4, iPad Air, iPad Air 2</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1536 x 2048 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>2048 x 1536 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>768 x 1024 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1024 x 768 px</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Resolutions/Entry/iPad Mini/0'>
+              <td class='description'>
+                <div class='name'><p>iPad Mini</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>768 x 1024 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1024 x 768 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>768 x 1024 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1024 x 768 px</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Resolutions/Entry/iPad Mini Retina/0'>
+              <td class='description'>
+                <div class='name'><p>iPad Mini Retina</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1536 x 2048 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>2048 x 1536 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>768 x 1024 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1024 x 768 px</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Resolutions/Entry/iPad/0'>
+              <td class='description'>
+                <div class='name'><p>iPad</p></div>
+                <div class='notes'><p>1st and 2nd Generation</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>768 x 1024 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1024 x 768 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>768 x 1024 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1024 x 768 px</p></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class='category'>
+        <h2 id='//dash_ref/Category/Displays/1'>
+          Displays
+        </h2>
+        <div class='scrollable'>
+          <table>
+            <tr>
+              <th>Device</th>
+              <th>Size</th>
+              <th>PPI</th>
+              <th>Assets</th>
+              <th>Color Mode</th>
+              <th>Color Temperature</th>
+            </tr>
+            <tr id='//dash_ref_Displays/Entry/iPhone 6 Plus/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6 Plus</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>5.5″</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>401</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p><code>@3x</code></p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>8bit RGB</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Warm</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Displays/Entry/iPhone 6/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>4.7″</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>326</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p><code>@2x</code></p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>8bit RGB</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Warm</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Displays/Entry/iPhone 5%2F5S%2F5C/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 5/5S/5C</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>4.0″</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>326</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p><code>@2x</code></p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>8bit RGB</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Warm</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Displays/Entry/iPhone 4%2F4S/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 4/4S</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>3.5″</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>326</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p><code>@2x</code></p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>8bit RGB</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Cool</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Displays/Entry/iPhone &amp; iPod Touch/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone &amp; iPod Touch</p></div>
+                <div class='notes'><p>1st, 2nd and 3rd Generation</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>3.5″</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>163</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p><code>@1x</code></p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>8bit RGB</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Warm</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Displays/Entry/iPad Retina/0'>
+              <td class='description'>
+                <div class='name'><p>iPad Retina</p></div>
+                <div class='notes'><p>iPad 3, iPad 4, iPad Air</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>9.7″</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>264</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p><code>@2x</code></p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>8bit RGB</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Warm</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Displays/Entry/iPad Mini/0'>
+              <td class='description'>
+                <div class='name'><p>iPad Mini</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>7.9″</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>163</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p><code>@1x</code></p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>8bit RGB</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Warm</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Displays/Entry/iPad Mini Retina/0'>
+              <td class='description'>
+                <div class='name'><p>iPad Mini Retina</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>7.9″</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>326</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p><code>@2x</code></p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>8bit RGB</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Warm</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Displays/Entry/iPad/0'>
+              <td class='description'>
+                <div class='name'><p>iPad</p></div>
+                <div class='notes'><p>1st and 2nd Generation</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>9.7″</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>132</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p><code>@1x</code></p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>8bit RGB</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Warm</p></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class='category'>
+        <h2 id='//dash_ref/Category/Dimensions/1'>
+          Dimensions
+        </h2>
+        <div class='scrollable'>
+          <table>
+            <tr>
+              <th>Device</th>
+              <th>App Icon</th>
+              <th>App Store Icon</th>
+              <th>Spotlight Icon</th>
+              <th>Settings Icon</th>
+            </tr>
+            <tr id='//dash_ref_Dimensions/Entry/iPhone 6 Plus/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6 Plus</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>180 x 180 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1024 x 1024 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>120 x 120 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>87 x 87 px</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Dimensions/Entry/iPhone 6/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>120 x 120 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1024 x 1024 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>80 x 80 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>58 x 58 px</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Dimensions/Entry/iPhone 5%2F5S%2F5C/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 5/5S/5C</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>120 x 120 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1024 x 1024 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>80 x 80 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>58 x 58 px</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Dimensions/Entry/iPhone 4%2F4S/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 4/4S</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>120 x 120 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1024 x 1024 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>80 x 80 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>58 x 58 px</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Dimensions/Entry/iPad Retina/0'>
+              <td class='description'>
+                <div class='name'><p>iPad Retina</p></div>
+                <div class='notes'><p>iPad 3, 4, Air, iPad Mini Retina</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>152 x 152 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1024 x 1024 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>80 x 80 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>58 x 58 px</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Dimensions/Entry/iPad Mini/0'>
+              <td class='description'>
+                <div class='name'><p>iPad Mini</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>76 x 76 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>512 x 512 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>40 x 40 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>29 x 29 px</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Dimensions/Entry/iPad/0'>
+              <td class='description'>
+                <div class='name'><p>iPad</p></div>
+                <div class='notes'><p>1st and 2nd Generation</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>76 x 76 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>512 x 512 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>40 x 40 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>29 x 29 px</p></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class='category no-min-width'>
+        <h2 id='//dash_ref/Category/Common Design Elements/1'>
+          Common Design Elements
+        </h2>
+        <div class='scrollable'>
+          <table>
+            <tr>
+              <th>Device</th>
+              <th>Status Bar Height</th>
+              <th>Navigation Bar Height</th>
+              <th>Tab Bar Height</th>
+              <th>Table Width</th>
+            </tr>
+            <tr id='//dash_ref_Common Design Elements/Entry/iPhone 6 Plus/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6 Plus</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>54 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>132 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>146 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>1080 / 1920 px</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Common Design Elements/Entry/iPhone 6/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>40 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>88 / 64 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>98 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>750 / 1334 px</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Common Design Elements/Entry/iPhone 5%2F5S%2F5C/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 5/5S/5C</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>40 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>88 / 64 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>98 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>640 / 1136 px</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Common Design Elements/Entry/iPhone 4%2F4S/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 4/4S</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>40 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>88 / 64 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>98 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>640 / 960 px</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Common Design Elements/Entry/iPad Retina/0'>
+              <td class='description'>
+                <div class='name'><p>iPad Retina</p></div>
+                <div class='notes'><p>iPad 3, 4, Air, iPad Mini Retina</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>40 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>88 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>112 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>dynamic</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Common Design Elements/Entry/iPad Mini/0'>
+              <td class='description'>
+                <div class='name'><p>iPad Mini</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>20 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>44 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>56 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>dynamic</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Common Design Elements/Entry/iPad/0'>
+              <td class='description'>
+                <div class='name'><p>iPad</p></div>
+                <div class='notes'><p>1st and 2nd Generation</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>20 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>44 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>56 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>dynamic</p></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class='category no-min-width'>
+        <h2 id='//dash_ref/Category/Icons/1'>
+          Icons
+        </h2>
+        <div class='scrollable'>
+          <table>
+            <tr>
+              <th>Device</th>
+              <th>Toolbar and Navigation Bar Icon</th>
+              <th>Tab Bar Icon</th>
+            </tr>
+            <tr id='//dash_ref_Icons/Entry/iPhone 6 Plus/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6 Plus</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>66 x 66 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>75 x 75 px (max 144 x 96 px)</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Icons/Entry/iPhone 6/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>44 x 44 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>50 x 50 px (max 96 x 64 px)</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Icons/Entry/iPhone 5%2F5S%2F5C/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 5/5S/5C</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>44 x 44 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>50 x 50 px (max 96 x 64 px)</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Icons/Entry/iPhone 4%2F4S/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 4/4S</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>44 x 44 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>50 x 50 px (max 96 x 64 px)</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Icons/Entry/iPad Retina/0'>
+              <td class='description'>
+                <div class='name'><p>iPad Retina</p></div>
+                <div class='notes'><p>iPad 3, 4, Air, iPad Mini Retina</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>44 x 44 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>50 x 50 px (max 96 x 64 px)</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Icons/Entry/iPad Mini/0'>
+              <td class='description'>
+                <div class='name'><p>iPad Mini</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>22 x 22 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>25 x 25 px (max 48 x 32 px)</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Icons/Entry/iPad/0'>
+              <td class='description'>
+                <div class='name'><p>iPad</p></div>
+                <div class='notes'><p>1st and 2nd Generation</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>22 x 22 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>25 x 25 px (max 48 x 32 px)</p></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class='category'>
+        <h2 id='//dash_ref/Category/Default Font Sizes iPhone 5%2F5C%2F5S%2F6/1'>
+          Default Font Sizes iPhone 5/5C/5S/6
+        </h2>
+        <div class='scrollable'>
+          <table>
+            <tr>
+              <th>Label Type</th>
+              <th>Default Font Size</th>
+              <th>Default Font Weight</th>
+            </tr>
+            <tr id='//dash_ref_Default Font Sizes iPhone 5%2F5C%2F5S%2F6/Entry/Navigation bar title/0'>
+              <td class='description'>
+                <div class='name'><p>Navigation bar title</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>34 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Medium</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Default Font Sizes iPhone 5%2F5C%2F5S%2F6/Entry/Regular buttons/0'>
+              <td class='description'>
+                <div class='name'><p>Regular buttons</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>34 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Light</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Default Font Sizes iPhone 5%2F5C%2F5S%2F6/Entry/Table header/0'>
+              <td class='description'>
+                <div class='name'><p>Table header</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>34 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Light</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Default Font Sizes iPhone 5%2F5C%2F5S%2F6/Entry/Table label/0'>
+              <td class='description'>
+                <div class='name'><p>Table label</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>28 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Regular</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Default Font Sizes iPhone 5%2F5C%2F5S%2F6/Entry/Tab bar icon labels/0'>
+              <td class='description'>
+                <div class='name'><p>Tab bar icon labels</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>20 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Regular</p></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class='category'>
+        <h2 id='//dash_ref/Category/Default Font Sizes iPhone 6 Plus/1'>
+          Default Font Sizes iPhone 6 Plus
+        </h2>
+        <div class='scrollable'>
+          <table>
+            <tr>
+              <th>Label Type</th>
+              <th>Default Font Size</th>
+              <th>Default Font Weight</th>
+            </tr>
+            <tr id='//dash_ref_Default Font Sizes iPhone 6 Plus/Entry/Navigation bar title/0'>
+              <td class='description'>
+                <div class='name'><p>Navigation bar title</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>48 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Medium</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Default Font Sizes iPhone 6 Plus/Entry/Regular buttons/0'>
+              <td class='description'>
+                <div class='name'><p>Regular buttons</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>48 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Light</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Default Font Sizes iPhone 6 Plus/Entry/Table header/0'>
+              <td class='description'>
+                <div class='name'><p>Table header</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>48 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Light</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Default Font Sizes iPhone 6 Plus/Entry/Table label/0'>
+              <td class='description'>
+                <div class='name'><p>Table label</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>44 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Regular</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Default Font Sizes iPhone 6 Plus/Entry/Tab bar icon labels/0'>
+              <td class='description'>
+                <div class='name'><p>Tab bar icon labels</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>30 px</p></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Regular</p></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class='category'>
+        <h2 id='//dash_ref/Category/Size Classes For Adaptive Layout/1'>
+          Size Classes For Adaptive Layout
+        </h2>
+        <div class='scrollable'>
+          <table>
+            <tr>
+              <th>Device Orientation</th>
+              <th>Size Class</th>
+            </tr>
+            <tr id='//dash_ref_Size Classes For Adaptive Layout/Entry/iPad - Portrait/0'>
+              <td class='description'>
+                <div class='name'><p>iPad - Portrait</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Height: Regular | Width: Regular</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Size Classes For Adaptive Layout/Entry/iPad - Landscape/0'>
+              <td class='description'>
+                <div class='name'><p>iPad - Landscape</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Height: Regular | Width: Regular</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Size Classes For Adaptive Layout/Entry/iPhone 6 Plus - Portrait/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6 Plus - Portrait</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Height: Regular | Width: Compact</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Size Classes For Adaptive Layout/Entry/iPhone 6 Plus - Landscape/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6 Plus - Landscape</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Height: Compact | Width: Regular</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Size Classes For Adaptive Layout/Entry/iPhone 6 and Before - Portrait/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6 and Before - Portrait</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Height: Regular | Width: Compact</p></div>
+              </td>
+            </tr>
+            <tr id='//dash_ref_Size Classes For Adaptive Layout/Entry/iPhone 6 and Before - Landscape/0'>
+              <td class='description'>
+                <div class='name'><p>iPhone 6 and Before - Landscape</p></div>
+                <div class='notes'></div>
+              </td>
+              <td class='td_notes'>
+                <div class='td_notes'><p>Height: Compact | Width: Compact</p></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </article>
+    <footer>
+      You can modify and improve this cheat sheet <a onclick="window.dash.openExternal_(this.href); return false;" href="http://cheat.kapeli.com">here</a>
+    </footer>
+  </body>
+</html>
